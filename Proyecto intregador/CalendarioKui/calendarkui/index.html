@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalendarioKui</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="/img/logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="#inicio"><li>Inicio</li></a>
+                <a href="eventos"><li>Eventos</li></a>
+                <a href="nosotros"><li>Nosotros</li></a>
+                <a href="contacto"><li>Contactenos</li></a>
+            </ul>
+        </nav>
+        <h1>CalendarioKui</h1>
+        <img src="img/logo.png" alt="Logo del CalendarioKui" width="100" height="100">
+        <p>Organiza tus eventos, tareas y horarios de clase de manera sencilla.</p>
+
+        <div>
+            <audio src="/recurses/time.mp3" controls> Tu navegador no soporta el elemento 
+                <code>audio</code>
+            </audio>
+        </div>
+    </header>
+
+    <main>
+        
+        <section>
+
+            <h2>Ingresa tus Datos</h2>
+
+            <div id="inicio">
+                <h3>Nuevo Evento</h3>
+                <form>
+                    <label for="nombre_evento">Nombre del Evento:</label>
+                    <input type="text" id="nombre_evento" required>
+
+                    <label for="fecha_evento">Fecha:</label>
+                    <input type="date" id="fecha_evento" required>
+
+                    <label for="hora_evento">Hora (opcional):</label>
+                    <input type="time" id="hora_evento">
+
+                    <button type="submit">Añadir Evento</button>
+                </form>
+            </div>
+
+            <div class="tarjeta-formulario">
+                <h3>Nueva Tarea</h3>
+                <form id="task-form">
+                    <label for="descripcion_tarea">Descripción de la Tarea:</label>
+                    <input type="text" id="descripcion_tarea" required>
+
+                    <label for="fecha_limite_tarea">Fecha Límite:</label>
+                    <input type="date" id="fecha_limite_tarea" required>
+
+                    <button type="submit">Añadir Tarea</button>
+                </form>
+            </div>
+
+            <div class="tarjeta-formulario">
+                <h3>Nuevo Horario de Clase</h3>
+                <form id="clase_formulario">
+                    <label for="nombre_materia">Materia:</label>
+                    <input type="text" id="nombre_materia" required>
+
+                    <label for="dia_clase">Día:</label>
+                    <select id="dia_clase" required>
+                        <option value="Lunes">Lunes</option>
+                        <option value="Martes">Martes</option>
+                        <option value="Miércoles">Miércoles</option>
+                        <option value="Jueves">Jueves</option>
+                        <option value="Viernes">Viernes</option>
+                        <option value="Sábado">Sábado</option>
+                        <option value="Domingo">Domingo</option>
+                    </select>
+
+                    <label for="reloj_inicio">Hora de Inicio:</label>
+                    <input type="time" id="reloj_inicio" required>
+
+                    <label for="reloj_fin">Hora de Fin:</label>
+                    <input type="time" id="reloj_fin">
+
+                    <button type="submit">Añadir Clase</button>
+                </form>
+            </div>
+
+        </section>
+        <br>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem debitis fugit cupiditate, deserunt totam quasi, ipsum facere enim atque voluptatibus tempore maiores hic a similique tenetur, ipsa quod dolorum vel?
+            In blanditiis ea architecto cupiditate, soluta, expedita nemo quis est voluptate minima officiis fuga fugit porro, ipsam tempora facilis. Ad eum debitis laborum suscipit tempora eaque excepturi ducimus delectus ea!
+            Mollitia ducimus cum minima. Eaque impedit soluta minus, tempore neque dicta velit iure quasi. Nulla debitis consectetur odit dolore optio nihil consequuntur ratione nam doloremque vitae? Harum corporis libero est!
+            Explicabo, laborum voluptatum! Placeat suscipit odit omnis quia corporis quod dignissimos harum obcaecati dolor a. Rem reprehenderit iste mollitia possimus, minus, commodi, nemo aperiam fuga esse natus distinctio! Nesciunt, accusantium?
+            Consequatur, quae! Sunt animi natus iste commodi quaerat possimus ex ea, sit, alias dolores dolorum voluptatum? Facilis tempora dolorum ut eum iusto a, earum enim dolore expedita corporis. Cupiditate, perspiciatis?</p>
+        </div>
+        <section>
+            <H2>HISTORIA DEL CALENDARIO --VIDEO--</H2>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ydJQX1fAIjM?si=Vjfg19PR7Ceq3Ci8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HawaslyPC</p>
+    </footer>
+
+    </body>
+</html>
